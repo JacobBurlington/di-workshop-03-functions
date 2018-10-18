@@ -1,6 +1,6 @@
 //this draws the canvas 
 function setup() {
-  createCanvas(400, 400)
+  createCanvas(900, 900)
   background(255)
 }
 var width;
@@ -13,13 +13,13 @@ function draw() {
   stroke(0)
  // triangle(0, 30, 40, 0, 80, 30)
  // square(5,  30, 70)
- x = 100,
- y = 100,
+ x = 75,
+ y = 75,
  width = 100,
  height = 150
  house(x, y, width, height)
- house(x+width, y, width, height)
- house(x + 2*width, y, width, height)
+ house(x+width*1, y, width*2, height)
+ house(x + 2*width*1.5, y, width*4, height)
 }
 //creates the shape using the parameters x, y and size, the parameter size is both width and height so that it draws a square
 function square(x, y, size) {
